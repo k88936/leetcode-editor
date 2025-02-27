@@ -166,7 +166,7 @@ public class SettingUI {
 
     private void loadSetting() {
         webComboBox.setSelectedIndex(0);
-        codeComboBox.setSelectedIndex(0);
+        codeComboBox.setSelectedIndex(CodeTypeEnum.CPP.ordinal());
         fileFolderBtn.setText(System.getProperty("java.io.tmpdir"));
 
         Config config = PersistentConfig.getInstance().getInitConfig();

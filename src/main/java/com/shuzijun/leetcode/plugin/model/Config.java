@@ -65,7 +65,7 @@ public class Config implements Cloneable {
     /**
      * 自定义代码生成
      */
-    private Boolean customCode = false;
+    private Boolean customCode = true;
     /**
      * 适应英文描述
      */
@@ -97,7 +97,7 @@ public class Config implements Cloneable {
     /**
      * question Split Editor
      */
-    private String questionEditor = "Left";
+    private String questionEditor = "Disable";
 
     /**
      * Content  Multiline Comment

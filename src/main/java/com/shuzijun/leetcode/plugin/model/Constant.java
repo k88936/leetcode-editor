@@ -63,7 +63,22 @@ public class Constant {
      * 默认模板
      */
     public static final String CUSTOM_FILE_NAME = "$!{question.frontendQuestionId}-${question.titleSlug}";
-    public static final String CUSTOM_TEMPLATE = "${question.content}\n//"+SUBMIT_REGION_BEGIN+"\n${question.code}\n//"+SUBMIT_REGION_END;
+    public static final String CUSTOM_TEMPLATE = "${question.content}\n" +
+            "\n" +
+            "\\#include \"includes.h\"\n" +
+            "\n" +
+            "\\#define LOCAL\n" +
+            "\n" +
+            "//leetcode submit region begin(Prohibit modification and deletion)\n" +
+            "#ifdef LOCAL\n" +
+            "\\#define eval(x) {auto temp =x; cout << #x << \" = \" << temp << endl;}\n" +
+            "\\#define test(x,y) if (x!=y) {auto temp=y; cout << \"test failed: \" << #x <<\" expected:\" <<temp<<\" got:\"<<x<<endl;}\n" +
+            "\\#define log(x) cout <<x<<endl\n" +
+            "\\#else\n" +
+            "\\#define eval(x)\n" +
+            "\\#define test(x,y)\n" +
+            "\\#define log(x)\n" +
+            "#endif\n//"+SUBMIT_REGION_BEGIN+"\n${question.code}\n//"+SUBMIT_REGION_END;
     /**
      * 配置文件版本记录
      */
