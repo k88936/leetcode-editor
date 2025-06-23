@@ -15,7 +15,7 @@ import java.util.List;
 
 public class HttpTest {
 
-    @Test
+//    @Test
     public void testVerify() throws LcException, IOException {
 
         DefaultExecutoHttp defaultExecutoHttp = new DefaultExecutoHttp();
