@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>leetcode-editor</id>
-    <name>LeetCode Editor</name>
+    <id>keetcoder</id>
+    <name>KeetCoder</name>
     <version>8.1</version>
     <vendor email="shuzijun0109@gmail.com" url="https://github.com/shuzijun/leetcode-editor">shuzijun</vendor>
 
