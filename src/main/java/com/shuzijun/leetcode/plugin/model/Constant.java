@@ -70,15 +70,14 @@ public class Constant {
             "\\#define LOCAL\n" +
             "\n" +
             "//leetcode submit region begin(Prohibit modification and deletion)\n" +
-            "#ifdef LOCAL\n" +
-            "\\#define eval(x) {auto temp =x; cout << #x << \" = \" << temp << endl;}\n" +
-            "\\#define test(x,y) if (x!=y) {auto temp=y; cout << \"test failed: \" << #x <<\" expected:\" <<temp<<\" got:\"<<x<<endl;}\n" +
-            "\\#define log(x) cout <<x<<endl\n" +
-            "\\#else\n" +
+            "#ifndef LOCAL\n" +
             "\\#define eval(x)\n" +
             "\\#define test(x,y)\n" +
             "\\#define log(x)\n" +
-            "#endif\n//"+SUBMIT_REGION_BEGIN+"\n${question.code}\n//"+SUBMIT_REGION_END;
+            "#endif\n//" + SUBMIT_REGION_BEGIN + "\n${question.code}\n//" + SUBMIT_REGION_END;
+
+
+//leetcode submit region end(Prohibit modification and deletion)
     /**
      * 配置文件版本记录
      */
@@ -123,11 +122,11 @@ public class Constant {
     /**
      * path
      */
-    public static final String DOC_PATH = "doc"+ File.separator;
-    public static final String DOC_SOLUTION = "doc"+ File.separator + "solution" +  File.separator;
-    public static final String DOC_CONTENT = "doc"+ File.separator + "content" +  File.separator;
-    public static final String DOC_SUBMISSION = "doc"+ File.separator + "submission" +  File.separator;
-    public static final String DOC_NOTE = "doc"+ File.separator + "note" +  File.separator;
+    public static final String DOC_PATH = "doc" + File.separator;
+    public static final String DOC_SOLUTION = "doc" + File.separator + "solution" + File.separator;
+    public static final String DOC_CONTENT = "doc" + File.separator + "content" + File.separator;
+    public static final String DOC_SUBMISSION = "doc" + File.separator + "submission" + File.separator;
+    public static final String DOC_NOTE = "doc" + File.separator + "note" + File.separator;
 
 
     /**
