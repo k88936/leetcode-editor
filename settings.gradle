@@ -1,11 +1,9 @@
-pluginManagement  {
+pluginManagement {
     repositories {
-        maven {
-            url 'https://oss.sonatype.org/content/repositories/snapshots/'
-        }
+        mavenCentral()
         gradlePluginPortal()
     }
 }
 
-rootProject.name = 'keetcoder'
+rootProject.name = 'leetcode-editor'
 
