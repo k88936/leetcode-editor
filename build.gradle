@@ -11,8 +11,8 @@ apply plugin: 'org.jetbrains.changelog'
 group project.pluginGroup
 version (System.getenv('LD_VERSION')==null ? project.pluginVersion :System.getenv('LD_VERSION'))
 
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 21
+targetCompatibility = 21
 
 
 repositories {
